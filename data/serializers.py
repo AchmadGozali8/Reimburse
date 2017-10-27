@@ -7,7 +7,8 @@ from rest_framework.serializers import HyperlinkedModelSerializer
 class UsersSerializer(HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ('username', 'email', 'last_login')
+
 
 class ReimbursementSerializer(HyperlinkedModelSerializer):
     class Meta:

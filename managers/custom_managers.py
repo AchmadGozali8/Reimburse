@@ -30,9 +30,9 @@ class StatusDeletedModel(models.Model):
         abstract = True
 
 class DateTimeHandlerModel(models.Model):
-    created_at = models.DateTimeField()
-    updated_at = models.DateTimeField(null=True, blank=True)
-    deleted_at = models.DateTimeField(null=True, blank=True)
+    created_at = models.DateField(null=False,blank=True)
+    updated_at = models.DateField(null=True, blank=True)
+    deleted_at = models.DateField(null=True, blank=True)
 
     class Meta:
         abstract = True

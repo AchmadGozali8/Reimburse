@@ -5,7 +5,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 from managers.custom_managers import StatusDeletedModel, DateTimeHandlerModel
-
+from django.utils import timezone
 
 DELETED = 1
 NOT_DELETED = 0

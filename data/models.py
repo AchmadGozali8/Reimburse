@@ -27,7 +27,7 @@ class Reimbursement(StatusDeletedModel, DateTimeHandlerModel):
         super(Reimbursement, self).save(*args, **kwargs)
 
     def __str__(self):
-        return "{}".format(description)
+        return "{}".format(self.description)
 
     class Meta:
         db_table = 'reimbursement'
